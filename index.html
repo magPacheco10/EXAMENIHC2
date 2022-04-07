@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="front-end/img/iot.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
+
+    <link rel="stylesheet" href="front-end/css/styles.css">
+    <title>Internet of Things</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex flex-row align-items-center" href="#">
+                <img src="front-end/img/icon.png" alt="" height="75" class="d-inline-block align-text-top">
+                <h2 class="ms-3">EXAMEN UNIDAD II IHC</h2>
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- CONTROL RANGE -->
+    <main class="container mt-5">
+        <section>
+            <h3>Magaly Bautista Pacheco  18200801 <br> 
+                Jonathan Ismael Hernández Alarcón  18200211<br>
+                 Misael Morales Matias 18201111</h3>
+            <p id="compatible"></p>
+            <div class="container">
+                <h1 class="texts">Potencia: 0</h1><br>
+                <h3 id="mensaje"></h3>
+            </div>
+            <h5>Comando de voz: Potencia, rango: 0 a 100</h5>
+            <input class="container border shadow col-7" type="range" name="" id="potencia" min="0" max="100" value="0">
+        </section>
+    </main>
+    <table id="table_id" class="display">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Potencia</th>
+                <th>fecha</th>
+            </tr>
+        </thead>
+    </table>
+    <!-- GRÁFICA -->
+    <br>
+    <div class="container border shadow col-2" id="grafica" style="width: 900px; height: 500px;"></div> <br> <br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"
+        integrity="sha512-suUtSPkqYmFd5Ls30Nz6bjDX+TCcfEzhFfqjijfdggsaFZoylvTj+2odBzshs0TCwYrYZhQeCgHgJEkncb2YVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script src="front-end/js/main.js"></script>
+    <script src="front-end/js/Estatus.js"></script>
+</body>
+
+</html>
