@@ -4,7 +4,7 @@ $('document').ready(()=>{
             let dataS = "status=" + $('#potencia').val();
             $.ajax({
                 type: "GET",
-                url: "/ExamenIHC2/backend/setStatusRange.php",
+                url: "https://regalicen.com/backend/backend/setStatusRange.php",
                 data: dataS,
                 success: (rr)=>{
                     console.log(rr);
@@ -20,7 +20,7 @@ $('document').ready(()=>{
 function grafi(){
     $.ajax({
         type: "GET",
-        url: "/ExamenIHC2/backend/tabla.php",
+        url: "https://regalicen.com/backend/backend/tabla.php",
         success: (rg)=>{
             console.log(rg); 
             let f = JSON.parse(rg);                   
@@ -33,7 +33,7 @@ function tablita(){
     $('#table_id').DataTable({
         "ajax": {
             "method":"POST",
-            "url": "/ExamenIHC2/backend/tabla.php",
+            "url": "https://regalicen.com/backend/backend/tabla.php",
         },
         "columns":[
             {"data":"id"},
@@ -107,7 +107,7 @@ recognition.onresult = (e) => {
         $.ajax
             ({
                 type: "GET",
-                url: "./backend/setStatusRange.php",
+                url: "https://regalicen.com/backend/backend/setStatusRange.php",
                 data: dataString,
                 
                 success: function (res) {
@@ -180,7 +180,7 @@ function validaGramatica(palabra1, palabra2, gramatica1, gramatica2, gramatica3)
 $.ajax
             ({
                 type: "GET",
-                url: "/ExamenIHC2/backend/tabla.php",
+                url: "https://regalicen.com/backend/backend/tabla.php",
                 success: function (res) {
                     let arreglo = JSON.parse(res);
                     graficacion(arreglo.graf);
